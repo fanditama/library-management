@@ -1,0 +1,3 @@
+CREATE DATABASE library_management_restful_api;
+
+USE library_management_restful_api;
