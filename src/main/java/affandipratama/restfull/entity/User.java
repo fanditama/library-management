@@ -29,6 +29,8 @@ public class User {
 
     @Column(name = "last_name")
     private String lastName;
+    
+    private String token;
 
     @Column(name = "token_expired_at")
     private Long tokenExpiredAt;
