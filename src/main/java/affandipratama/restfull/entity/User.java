@@ -34,5 +34,5 @@ public class User {
     private Long tokenExpiredAt;
 
     @OneToMany(mappedBy = "user")
-    private List<User> User;
+    private List<Loan> loans;
 }

@@ -30,9 +30,11 @@ public class Loan {
 
     private  String status;
 
-    @OneToMany(mappedBy = "loan")
-    private List<User> User;
+    @ManyToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    private User user;
 
-    @OneToMany(mappedBy = "loan")
-    private List<Book> Book;
+    @ManyToOne
+    @JoinColumn(name = "book_id", referencedColumnName = "id")
+    private Book book;
 }

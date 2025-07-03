@@ -32,7 +32,7 @@ public class Book {
     @Column(name = "available_copies")
     private Integer availableCopies;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "author_id", referencedColumnName = "id")
     private Author author;
 
