@@ -36,6 +36,11 @@ public class AuthControllerTest {
     
     @Autowired
     private UserRepository userRepository;
+
+    @BeforeEach
+    void setUp() {
+        userRepository.deleteAll();
+    }
     
     @Test
     void loginFailedUserAndEmailNotFound() throws Exception {
