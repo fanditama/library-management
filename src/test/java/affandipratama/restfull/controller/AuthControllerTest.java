@@ -3,6 +3,7 @@ package affandipratama.restfull.controller;
 import affandipratama.restfull.entity.User;
 import affandipratama.restfull.model.LoginUserRequest;
 import affandipratama.restfull.model.TokenResponse;
+import affandipratama.restfull.model.UserResponse;
 import affandipratama.restfull.repository.UserRepository;
 import affandipratama.restfull.model.WebResponse;
 import affandipratama.restfull.security.BCrypt;
@@ -20,10 +21,8 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.springframework.test.web.servlet.MockMvcBuilder.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc
